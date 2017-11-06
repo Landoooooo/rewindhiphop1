@@ -62,3 +62,4 @@ gem 'ckeditor', '~> 4.1'
 # Comment closure
 gem 'closure_tree'
 gem 'mysql2', '~> 0.3.18'
+gem 'carrierwave', '~> 1.0'
