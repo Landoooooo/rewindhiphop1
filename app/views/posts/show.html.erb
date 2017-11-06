@@ -1,0 +1,10 @@
+<div class="col-sm-11 col-xs-12 blog-content">
+  <h2 class="text-center"><%= @post.title %></h2>
+  <h5 class="text-center"><%= @post.created_at.strftime('%b %d, %Y') %></h5>
+  <div><%= raw @post.body %></div>
+  <br>
+  <h2>	<%= @post.comments.count %> </h2>
+  	<%= render @post.comments %>
+  	<h3>Add a comment...</h3>
+  	<%= render partial: 'comments/form', post: @post%>
+</div>

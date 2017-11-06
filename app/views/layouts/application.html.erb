@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rewind Hiphop</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag 'rewind-logo-icon.png' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/e7fe91aafc.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <li class="nav-logo"><%= link_to image_tag("rewind-logo.png", alt: "logo"), home_path, class: "navbar-left"%></li>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+        		  <li class="nav-links"><%= link_to "Home",home_path%></li>
+        		  <li class="nav-links"><%= link_to "Tapes",tapes_path%></li>
+        		  <li class="nav-links"><%= link_to "User",user_path%></li>
+          		<%= render 'devise/menu/login_items' %>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-links"><a href="https://twitter.com/rewindHipHop" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></a></i>
+    </li>
+                <li class="nav-links"><a href="https://facebook.com/rewindhiphop" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></a></i>
+    </li>
+                <li class="nav-links"><a href="https://instagram.com/rewindhiphop" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></a></i>
+    </li>
+      		  </ul>
+        </div>
+    </nav>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <div class="content">
+      <%= yield %>
+    </div>
+  </body>
+</html>
