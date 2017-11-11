@@ -27,6 +27,15 @@ li {
 
 li.nav-logo{
     margin-top:15px;
+    background-color:#000;
+}
+
+li.nav_logo:hover{
+    background-color:#000;
+}
+
+.containder-fluid{
+    background-color:#000;
 }
 
 .navbar-inverse .navbar-nav li a{
@@ -47,7 +56,11 @@ li a:hover {
 }
 
 button.navbar-toggle{
-    margin-top:15px;
+    margin-top:20px;
+}
+
+.container-fluid{
+    background-color:#000;
 }
 
 @media only screen 
@@ -58,9 +71,15 @@ button.navbar-toggle{
     and (orientation : portrait) 
     and (-webkit-min-device-pixel-ratio : 3) 
     and (-webkit-device-pixel-ratio : 3)
-{ li.nav-logo{
-    margin-top:0px;
-}}
+{ 
+    li.nav-logo{
+        margin-top:0px;
+    }
+
+    button.navbar-toggle{
+        margin-top:15px;
+    }
+}
 
 
 
