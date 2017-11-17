@@ -45,7 +45,7 @@ class PostsController < ApplicationController
   # The show action renders the individual post after retrieving the the id
   def show
     @user = current_user
-    @post = Post.find(params[:id])
+    @post = Post.friendly.find(params[:id])
     @comments = @post.comments
   end
 
@@ -66,7 +66,7 @@ class PostsController < ApplicationController
   end
 
   def find_post
-    @post = Post.find(params[:id])
+    @post = Post.friendly.find(params[:id])
   end
 
 end

@@ -65,3 +65,5 @@ gem 'carrierwave', '~> 1.0'
 gem 'mini_magick'
 # Social Media Share Icons
 gem 'shareable'
+# Friendly URLs
+gem 'friendly_id', '~> 5.1.0'
