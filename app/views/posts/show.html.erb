@@ -2,6 +2,7 @@
   <h2 class="text-center"><%= @post.title %></h2>
   <h5 class="text-center"><%= @post.created_at.strftime('%b %d, %Y') %></h5>
   <div><%= raw @post.body %></div>
+  <div><%= render_shareable :buttons=> ['twitter', 'facebook'] %></div>
   <br>
   <h2>	<%= @post.comments.count %> </h2>
   	<%= render @post.comments %>

@@ -63,3 +63,5 @@ gem 'ckeditor', '~> 4.1'
 gem 'closure_tree'
 gem 'carrierwave', '~> 1.0'
 gem 'mini_magick'
+# Social Media Share Icons
+gem 'shareable'
