@@ -67,3 +67,5 @@ gem 'mini_magick'
 gem 'shareable'
 # Friendly URLs
 gem 'friendly_id', '~> 5.1.0'
+# Rails 12factor
+gem 'rails_12factor', group: :production
