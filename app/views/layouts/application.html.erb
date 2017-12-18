@@ -5,6 +5,7 @@
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'ckeditor/ckeditor.js' %>
     <%= favicon_link_tag 'rewind-logo-icon.png' %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -50,5 +51,15 @@
     <div class="content">
       <%= yield %>
     </div>
+    <footer>
+            <script type="text/javascript">$(document).ready(function() {
+          if ($('textarea').length > 0) {
+              var data = $('textarea');
+              $.each(data, function(i) {
+                  CKEDITOR.replace(data[i].id);
+              });
+          }
+      });</script>
+    </footer>
   </body>
 </html>
