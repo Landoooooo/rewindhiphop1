@@ -15,5 +15,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require ckeditor/init
+//= require ckeditor/config
+//= require ckeditor/plugins/youtube/plugin
+//= require ckeditor/plugins/youtube/lang/en
 //= require_tree .
 
