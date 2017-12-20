@@ -13,7 +13,7 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require jquery_ujs
-///= require ckeditor/init
+//= require ckeditor/init
 //= require ckeditor/config
 //= require ckeditor/plugins/youtube/plugin
 //= require ckeditor/plugins/youtube/lang/en
