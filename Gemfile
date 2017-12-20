@@ -58,7 +58,7 @@ gem 'simple_form', '~> 3.2'
 # Bootstrap 
 gem 'bootstrap-sass', '~> 3.3'
 # Creation and updating of a post
-gem 'ckeditor', github: 'galetahub/ckeditor'
+gem 'ckeditor', github: 'galetahub/ckeditor', ref: '11d3a5b'
 # Comment closure
 gem 'closure_tree'
 gem 'carrierwave', '~> 1.0'
