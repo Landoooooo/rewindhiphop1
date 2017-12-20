@@ -55,4 +55,8 @@ Ckeditor.setup do |config|
   # Used when CKEditor CDN enabled
   # By default: "ckeditor/config.js"
   # config.js_config_url = 'ckeditor/config.js'
+   # To reduce the asset precompilation time, you can limit plugins and/or languages to those you need:
+  # By default: nil (no limit)
+  config.assets_languages = ['en', 'uk']
+  config.assets_plugins = ['youtube']
 end
