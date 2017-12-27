@@ -1,9 +1,8 @@
 GIT
   remote: https://github.com/galetahub/ckeditor.git
-  revision: 11d3a5b905646c6fd397f7710f95fb9eb29f0865
-  ref: 11d3a5b
+  revision: 32bc0c6702388549cb4b3f00f82afbc3798d6891
   specs:
-    ckeditor (4.2.2)
+    ckeditor (4.2.4)
       cocaine
       orm_adapter (~> 0.5.0)
 

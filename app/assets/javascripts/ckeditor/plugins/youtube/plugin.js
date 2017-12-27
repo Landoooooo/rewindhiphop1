@@ -4,7 +4,7 @@
 * @author Jonnas Fonini <jonnasfonini@gmail.com>
 * @version 2.1.5
 */
-(function () {
+function () {
 	CKEDITOR.plugins.add('youtube', {
 		lang: [ 'en', 'pt', 'pt-br', 'ja', 'hu', 'it', 'fr', 'tr', 'ru', 'de', 'ar', 'nl', 'pl', 'vi', 'zh', 'el', 'he', 'es', 'nb', 'nn', 'fi', 'et', 'sk', 'cs', 'ko'],
 		init: function (editor) {
@@ -325,7 +325,7 @@
 			});
 		}
 	});
-})();
+});
 
 function handleLinkChange(el, api) {
 	var video = ytVidId(el.getValue());

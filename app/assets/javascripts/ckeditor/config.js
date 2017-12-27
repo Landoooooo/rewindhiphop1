@@ -1,3 +1,4 @@
+
 CKEDITOR.editorConfig = function(config) {
   config.language = 'en';
   config.width = '700';
@@ -8,7 +9,7 @@ CKEDITOR.editorConfig = function(config) {
   config.filebrowserUploadUrl = "/ckeditor/attachment_files";
   config.extraPlugins = 'youtube';
 
-  config.toolbar_Pure = [
+  config.toolbar_Full = [
     '/', {
       name: 'basicstyles',
       items: ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat']
@@ -29,6 +30,6 @@ CKEDITOR.editorConfig = function(config) {
       items: ['Image', 'Table', 'HorizontalRule', 'PageBreak']
     }
   ];
-  config.toolbar = 'Pure';
+  config.toolbar = 'Full';
   return true;
 };
