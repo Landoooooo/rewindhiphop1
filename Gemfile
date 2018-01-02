@@ -7,7 +7,7 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.6'
+gem 'rails', '5.0.6'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 # Use Puma as the app server
@@ -57,14 +57,21 @@ gem 'devise'
 gem 'simple_form', '~> 3.2'
 # Bootstrap 
 gem 'bootstrap-sass', '~> 3.3'
+<<<<<<< HEAD
 # Creation and updating of a post
 gem 'ckeditor', github: 'galetahub/ckeditor'
 # Comment closure
 gem 'closure_tree'
 gem 'carrierwave', '~> 1.0'
 gem 'mini_magick'
+=======
+# WYSISWYG
+
+>>>>>>> ckeditor_removal
 # Social Media Share Icons
 gem 'shareable'
+# Font Awesome
+gem 'font-awesome-rails'
 # Friendly URLs
 gem 'friendly_id', '~> 5.1.0'
 # Rails 12factor
