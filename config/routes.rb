@@ -1,12 +1,10 @@
 Rails.application.routes.draw do
-
+ 
   devise_for :admins
   resources :posts do
   	resources :comments
   end
 
-  mount Ckeditor::Engine => '/ckeditor'
-  	
   get 'home', to: 'posts#index', as: 'home'
 
   get 'tapes', to: 'static_pages#tapes', as: 'tapes'
@@ -34,6 +32,7 @@ Rails.application.routes.draw do
 	end
 
   root to: 'posts#index'
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
