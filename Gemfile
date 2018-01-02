@@ -57,17 +57,6 @@ gem 'devise'
 gem 'simple_form', '~> 3.2'
 # Bootstrap 
 gem 'bootstrap-sass', '~> 3.3'
-<<<<<<< HEAD
-# Creation and updating of a post
-gem 'ckeditor', github: 'galetahub/ckeditor'
-# Comment closure
-gem 'closure_tree'
-gem 'carrierwave', '~> 1.0'
-gem 'mini_magick'
-=======
-# WYSISWYG
-
->>>>>>> ckeditor_removal
 # Social Media Share Icons
 gem 'shareable'
 # Font Awesome
