@@ -51,15 +51,5 @@
     <div class="content">
       <%= yield %>
     </div>
-    <footer>
-            <script type="text/javascript">$(document).ready(function() {
-          if ($('form-group content').length > 0) {
-              var data = $('form-group content');
-              $.each(data, function(i) {
-                  CKEDITOR.replace(data[i].id);
-              });
-          }
-      });</script>
-    </footer>
   </body>
 </html>

@@ -12,13 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-<<<<<<< HEAD
-//= require ckeditor/init
-//= require ckeditor/plugins/youtube/plugin
-//= require ckeditor/plugins/youtube/lang/en
-//= require ckeditor/config
-=======
 //= require bootstrap-sprockets
->>>>>>> ckeditor_removal
 //= require turbolinks
 //= require_tree .

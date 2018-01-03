@@ -57,8 +57,6 @@ gem 'devise'
 gem 'simple_form', '~> 3.2'
 # Bootstrap 
 gem 'bootstrap-sass', '~> 3.3'
-# WYSISWYG
-gem 'bootstrap-wysihtml5-rails'
 # Social Media Share Icons
 gem 'shareable'
 # Font Awesome

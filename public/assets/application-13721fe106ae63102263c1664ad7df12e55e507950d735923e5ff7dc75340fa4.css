@@ -14,7 +14,7 @@
 
 
  */
-/* line 17, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
+/* line 20, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
 ul .nav navbar-nav {
   list-style-type: none;
   margin: 0;
@@ -23,29 +23,29 @@ ul .nav navbar-nav {
   background-color: #333;
 }
 
-/* line 25, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
+/* line 28, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
 li {
   float: left;
 }
 
-/* line 29, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
+/* line 32, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
 li.nav-logo {
   margin-top: 15px;
   background-color: #000;
   list-style-type: none;
 }
 
-/* line 35, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
+/* line 38, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
 li.nav_logo:hover {
   background-color: #000;
 }
 
-/* line 39, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
+/* line 42, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
 .containder-fluid {
   background-color: #000;
 }
 
-/* line 43, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
+/* line 46, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
 .navbar-inverse .navbar-nav li a {
   line-height: 60px;
   display: block;
@@ -55,35 +55,56 @@ li.nav_logo:hover {
   text-decoration: none;
 }
 
-/* line 52, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
+/* line 55, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
 li a:hover {
   background-color: #111;
 }
 
-/* line 56, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
+/* line 59, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
 .content {
   padding: 20px;
+  overflow: hidden;
 }
 
-/* line 60, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
+/* line 64, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
 button.navbar-toggle {
   margin-top: 20px;
 }
 
-/* line 64, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
+/* line 68, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
 .container-fluid {
   background-color: #000;
 }
 
+/* line 72, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
+.text_center {
+  font-size: 25px;
+}
+
+/* line 76, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
+.col-xs-12 {
+  margin-bottom: 80px;
+}
+
+/* line 80, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
+iframe {
+  margin-top: 3px;
+}
+
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 3) and (-webkit-device-pixel-ratio: 3) {
-  /* line 77, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
+  /* line 93, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
   li.nav-logo {
     margin-top: 0px;
   }
 
-  /* line 81, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
+  /* line 97, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
   button.navbar-toggle {
     margin-top: 15px;
+  }
+
+  /* line 101, /Users/alandoappling/Desktop/rewindhiphop1/rewindhiphop/app/assets/stylesheets/application.scss */
+  div.media-content {
+    width: 90%;
   }
 }
 /*!
