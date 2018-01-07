@@ -55,6 +55,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 # Simple form
 gem 'simple_form', '~> 3.2'
+# Image upload
+gem 'paperclip', :git => "git://github.com/thoughtbot/paperclip.git"
+gem 'carrierwave', '~> 0.10.0'
 # Bootstrap 
 gem 'bootstrap-sass', '~> 3.3'
 # Social Media Share Icons
