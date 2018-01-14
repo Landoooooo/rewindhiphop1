@@ -53,13 +53,13 @@ class PostsController < ApplicationController
         site: "Rewindhiphop",
         title: @post.title,
         description: @post.caption,
-        image: @post.image,
+        image: @post.image.url,
       },
       og: {
         title: @post.title,
         description: @post.caption,
         type: 'website',
-        image: @post.image
+        image: @post.image.url
       }
 
 
