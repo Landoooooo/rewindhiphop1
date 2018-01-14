@@ -61,6 +61,8 @@ gem 'paperclip', :git => "git://github.com/thoughtbot/paperclip.git"
 gem 'carrierwave', '~> 0.10.0'
 gem 'dotenv-rails', require: 'dotenv/rails-now'
 gem 'figaro'
+# SEO
+gem 'meta-tags'
 # Bootstrap 
 gem 'bootstrap-sass', '~> 3.3'
 # Social Media Share Icons

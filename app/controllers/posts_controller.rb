@@ -44,9 +44,29 @@ class PostsController < ApplicationController
 
   # The show action renders the individual post after retrieving the the id
   def show
+    set_meta_tags title: @post.title,
+      site: "Rewindhiphop.com",
+      reverse: true,
+      description: @post.caption,
+      twitter: {
+        card: "summary",
+        site: "Rewindhiphop",
+        title: @post.title,
+        description: @post.caption,
+        image: @post.image,
+      },
+      og: {
+        title: @post.title,
+        description: @post.caption,
+        type: 'website',
+        image: @post.image
+      }
+
+
     @user = current_user
     @post = Post.friendly.find(params[:id])
     @comments = @post.comments
+
   end
 
   # The destroy action removes the post permanently from the database
