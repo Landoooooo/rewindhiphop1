@@ -2,7 +2,7 @@ class Post < ApplicationRecord
 	has_many :comments
 	has_many :images
 	has_attached_file :image, 
-	styles: { medium: "300x300#", thumb: "100x100#" },
+	styles: { medium: "200x200#", thumb: "100x100#" },
     :storage => :s3,
     :s3_credentials => {
       :bucket => ENV['S3_BUCKET_NAME'],

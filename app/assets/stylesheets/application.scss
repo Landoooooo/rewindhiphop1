@@ -87,7 +87,21 @@ div.media-content{
 }
 
 .content{
+    text-align:center;
     padding-left:100px;
+    padding-right:200px;
+    margin-left: 10px;
+}
+
+nav.share{
+    padding-top:100px;
+}
+img{
+    float:left;
+}
+
+.show-title{
+    margin-right:240px;
 }
 
 @media only screen 
