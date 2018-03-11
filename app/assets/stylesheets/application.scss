@@ -51,7 +51,7 @@ li.nav_logo:hover{
     text-decoration: none;
 }
 
-li a:hover {
+.nav-links li a:hover {
     background-color: #111;
 }
 
@@ -76,28 +76,13 @@ button.navbar-toggle{
 margin-bottom:80px;
 }
 
-div.row.text-center{
-    margin-left: 10%;
-    margin-right: 20%;
-}
-
-div.media-content{
-    text-align: center;
-    margin-right: 40px;
-}
 
 .content{
     text-align:center;
-    padding-left:100px;
-    padding-right:200px;
-    margin-left: 10px;
 }
 
 nav.share{
     padding-top:100px;
-}
-img{
-    float:left;
 }
 
 .show-title{
@@ -106,6 +91,29 @@ img{
 .row.content{
     padding-right:100px;
     padding-left:500px;
+}
+
+.carousel_image{
+    height: auto;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.image_caption{
+    top: 72%;
+}
+
+li.media{
+    margin-bottom:50px;
+    width: 100%;
+}
+
+.media-body{
+    width:800px !important;
+}
+img.mr-1{
+    margin-left:80px;
 }
 
 @media only screen 
@@ -123,14 +131,6 @@ img{
 
     button.navbar-toggle{
         margin-top:15px;
-    }
-
-    div.media-content{
-        width:90%;
-    }
-
-    .content{
-        padding-left:20%;
     }
 
 }
