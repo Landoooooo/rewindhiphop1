@@ -6,8 +6,11 @@ class PostsController < ApplicationController
 
   # Index action to render all posts
   def index
-    @posts = Post.all.order("created_at DESC")
-    @post = Post.all.order("created_at DESC").limit(4)
+    if params[:tag]
+      @posts = Post.tagged_with(params[:tag])
+    else
+      @posts = Post.all.order("created_at DESC")
+    end
   end
 
   # New action for creating post
@@ -83,7 +86,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :body, :caption, :image)
+    params.require(:post).permit(:title, :body, :caption, :image, :tag_list)
   end
 
   def find_post

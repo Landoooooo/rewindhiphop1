@@ -1,4 +1,5 @@
 class Post < ApplicationRecord
+  acts_as_taggable
 	has_many :comments
 	has_many :images
 	has_attached_file :image, 

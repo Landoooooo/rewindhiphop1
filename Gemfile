@@ -35,6 +35,8 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'aws-sdk-s3'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
@@ -56,7 +58,7 @@ gem 'devise'
 # Simple form
 gem 'simple_form', '~> 3.2'
 # Image upload
-gem 'aws-sdk', '~> 2.3'
+
 gem 'paperclip', :git => "git://github.com/thoughtbot/paperclip.git"
 gem 'carrierwave', '~> 0.10.0'
 gem 'dotenv-rails', require: 'dotenv/rails-now'
@@ -71,5 +73,7 @@ gem 'shareable'
 gem 'font-awesome-rails'
 # Friendly URLs
 gem 'friendly_id', '~> 5.1.0'
+# Tags for posts
+gem 'acts-as-taggable-on'
 # Rails 12factor
 gem 'rails_12factor', group: :production

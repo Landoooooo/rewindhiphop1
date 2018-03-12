@@ -3,7 +3,7 @@
     <h1>Featured Posts</h1>
     <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin: 0 auto; background: #d1dbde; width:400px;">
       <div class="carousel-inner" role="listbox">
-        <% @posts.each do |post| %>
+        <% @posts.tagged_with(["featured"], :any => true).each do |post| %>
           <% if post == @posts.first%>
             <div class="item active">
                <%= image_tag(post.image.url(:medium), :class => "carousel_image image_responsive") %> 

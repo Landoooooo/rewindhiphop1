@@ -2,7 +2,7 @@ Rails.application.routes.draw do
  
   devise_for :admins
   resources :posts do
-  	resources :comments
+  	resources :create, :destroy, :comments, :tag
   end
 
   get 'home', to: 'posts#index', as: 'home'
@@ -30,6 +30,8 @@ Rails.application.routes.draw do
 	  get 'users/edit', to: 'devise/registrations#edit'
 
 	end
+
+  get 'tags/:tag', to: 'posts#index', as: :tag
 
   root to: 'posts#index'
 
