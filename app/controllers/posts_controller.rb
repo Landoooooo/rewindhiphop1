@@ -7,7 +7,7 @@ class PostsController < ApplicationController
   # Index action to render all posts
   def index
     if params[:tag]
-      @posts = Post.tagged_with(params[:tag])
+      @posts = Post.any.tagged_with(params[:tag])
     else
       @posts = Post.all.order("created_at DESC")
     end
@@ -54,7 +54,7 @@ class PostsController < ApplicationController
       description: @post.caption,
       twitter: {
         card: "summary",
-        site: "Rewindhiphop",
+        site: "@rewindhiphop",
         title: @post.title,
         description: @post.caption,
         image: @post.image.url(:medium),
@@ -63,6 +63,7 @@ class PostsController < ApplicationController
         title: @post.title,
         description: @post.caption,
         type: 'website',
+        url: post_path(@post), 
         image: @post.image.url(:medium)
       }
 
@@ -86,7 +87,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :body, :caption, :image, :tag_list)
+    params.require(:post).permit(:title, :body, :caption, :image, :tag_list, :embed)
   end
 
   def find_post

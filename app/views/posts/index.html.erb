@@ -5,14 +5,16 @@
     </div>
     <br>
     <hr>
-    <h1 class="post-title">Newest Posts</h1>
+    <h1 class="post-title text-center">Newest Posts</h1>
     <div class="col-xs-12 blog-content">
       <% @posts.each do |post| %>
         <ul class="list-unstyled">
           <li class="media">
             <div class="image-container col-md-1 col-md-offset-1">
               <a class="media-left" href= "#">
-                <%= image_tag post.image.url(:thumb), :class => "mr-1"%>
+                <%= link_to post_path(post) do %>
+                  <%= image_tag post.image.url(:thumb), :class => "mr-1"%>
+                <% end %>
               </a>
            </div>
             <div class="media-body">

@@ -1,20 +1,29 @@
-<div class="col-sm-11 col-xs-12 blog-content">
- <div class="col-md-12"
-  <div class ="image">
-	<%= image_tag @post.image.url(:medium) %>
- 	<h2 class="show-title text-center"><%= @post.title %></h2>
-  </div>
- </div>
- <div class="row content"
-	  <div class="text-center"><%= @post.created_at.strftime('%b %d, %Y') %></div>
-	  <div class="col-md-12 text-center"><%= raw @post.body %></div>
- </div>
- <div><%= render_shareable :buttons=> ['twitter', 'facebook'] %></div>
-  <br>
- <div class="container">
-  <h2>	<%= @post.comments.count %> </h2>
-  	<%= render @post.comments %>
-  	<h3>Add a comment...</h3>
-  	<%= render partial: 'comments/form', post: @post%>
- </div>
+<div class="container">
+    <div class="row">
+      <h1 class="show-title text-center col-xs-12"><%= @post.title %></h1>
+      <div class="text-center col-xs-12">
+        <%= @post.created_at.strftime('%b %d, %Y') %>
+      </div>
+    </div>
+    <div class="row">
+      <div class ="image col-md-6 col-xs-12">
+    	 <%= image_tag @post.image.url(:large), class: "show-image" %>
+      </div>
+      <div class="panel panel-default col-md-6 col-xs-12">
+        <div class="panel-body">
+          <div class="embed-responsive embed-responsive-16by9">
+            <p class="embed-responsive-item"><%= raw @post.embed %></p>
+          </div>
+          <br>
+          <p><strong><%= raw @post.caption %></strong></p>
+          <p><%= raw @post.body %></p>
+        </div>         
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">
+        <%= render_shareable :buttons=> ['twitter', 'facebook'] %>
+      </div>
+    </div>
 </div>
+  

@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
 
 
 ul .nav navbar-nav{
@@ -108,20 +108,89 @@ li.media{
     margin-bottom:50px;
     width: 100%;
 }
+
 h1.post-title{
+    color: black !important;
+    font-size: 70px;
+    font-family: 'Shadows Into Light', cursive;
     margin-bottom:100px;
 }
 
+h1.post-title a{
+    color:black;
+}
 
+h2.post-title{
+    color: black !important;
+    font-size: 50px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+h2.post-title a{
+    color:black;
+}
+
+h3.post-title{
+    color: black !important;
+    font-family: 'Shadows Into Light', cursive;
+}
+h3.post-title a{
+    color:black;
+    margin-bottom:5px;
+}
+
+h2.post-title a:link{
+    text-decoration:none;
+}
+
+h2.post-title a:hover{
+    color:#900D0D;
+}
+
+h1.show-title{
+    color: black !important;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 50px;
+}
+
+.panel{
+    margin-top:25px;
+}
+
+.panel-body{
+    font-size:15px;
+    text-align:left;
+}
+
+div.panel-body:hover{
+    -webkit-box-shadow: 1px 13px 5px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 13px 5px -7px rgba(0,0,0,0.75);
+    box-shadow: 1px 13px 5px -7px rgba(0,0,0,0.75);
+}
+
+#myCarousel{
+    width:400px;
+}
+
+.carousel-inner img {
+    width: auto;
+    height: auto;
+}
+
+
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
 @media only screen 
-    and (min-device-width : 375px) 
-    and (max-device-width : 812px)
-    and (device-width : 375px)
-    and (device-height : 812px)
-    and (orientation : portrait) 
-    and (-webkit-min-device-pixel-ratio : 3) 
-    and (-webkit-device-pixel-ratio : 3)
-{ 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+   #myCarousel{
+        width: 95%;
+    }
+
     li.nav-logo{
         margin-top:0px;
     }
@@ -129,6 +198,374 @@ h1.post-title{
     button.navbar-toggle{
         margin-top:15px;
     }
+
+    .show-image{
+        width:95%;
+    }
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+   #myCarousel{
+        width: 95%;
+    }
+
+    li.nav-logo{
+        margin-top:0px;
+    }
+
+    button.navbar-toggle{
+        margin-top:15px;
+    }
+
+    .show-image{
+        width:95%;
+    }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+   #myCarousel{
+        width: 95%;
+    }
+
+    li.nav-logo{
+        margin-top:0px;
+    }
+
+    button.navbar-toggle{
+        margin-top:15px;
+    }
+
+    .show-image{
+        width:95%;
+    }
+
+
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+     #myCarousel{
+        width: 95%;
+    }
+
+    li.nav-logo{
+        margin-top:0px;
+    }
+
+    button.navbar-toggle{
+        margin-top:15px;
+    }
+
+    .show-image{
+        width:95%;
+    }
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+     #myCarousel{
+        width: 95%;
+    }
+
+    li.nav-logo{
+        margin-top:0px;
+    }
+
+    button.navbar-toggle{
+        margin-top:15px;
+    }
+
+    .show-image{
+        width:95%;
+    }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+     #myCarousel{
+        width: 95%;
+    }
+
+    li.nav-logo{
+        margin-top:0px;
+    }
+
+    button.navbar-toggle{
+        margin-top:15px;
+    }
+
+    .show-image{
+        width:95%;
+    }
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+   #myCarousel{
+        width: 95%;
+    }
+
+    li.nav-logo{
+        margin-top:0px;
+    }
+
+    button.navbar-toggle{
+        margin-top:15px;
+    }
+
+    .show-image{
+        width:95%;
+    }
+
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+   #myCarousel{
+        width: 95%;
+    }
+
+    li.nav-logo{
+        margin-top:0px;
+    }
+
+    button.navbar-toggle{
+        margin-top:15px;
+    }
+
+    .show-image{
+        width:95%;
+    }
+
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+   #myCarousel{
+        width: 95%;
+    }
+
+    li.nav-logo{
+        margin-top:0px;
+    }
+
+    button.navbar-toggle{
+        margin-top:15px;
+    }
+
+    .show-image{
+        width:95%;
+    }
+
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+   #myCarousel{
+        width: 95%;
+    }
+
+    li.nav-logo{
+        margin-top:0px;
+    }
+
+    button.navbar-toggle{
+        margin-top:15px;
+    }
+
+    .show-image{
+        width:95%;
+    }
+
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+   #myCarousel{
+        width: 95%;
+    }
+
+    li.nav-logo{
+        margin-top:0px;
+    }
+
+    button.navbar-toggle{
+        margin-top:15px;
+    }
+
+    .show-image{
+        width:95%;
+    }
+
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+   #myCarousel{
+        width: 95%;
+    }
+
+    li.nav-logo{
+        margin-top:0px;
+    }
+
+    button.navbar-toggle{
+        margin-top:15px;
+    }
+
+    .show-image{
+        width:95%;
+    }
+
+
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+   #myCarousel{
+        width: 95%;
+    }
+
+    li.nav-logo{
+        margin-top:0px;
+    }
+
+    button.navbar-toggle{
+        margin-top:15px;
+    }
+
+    .show-image{
+        width:95%;
+    }
+
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+   #myCarousel{
+        width: 95%;
+    }
+
+    li.nav-logo{
+        margin-top:0px;
+    }
+
+    button.navbar-toggle{
+        margin-top:15px;
+    }
+
+    .show-image{
+        width:95%;
+    }
+
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+   #myCarousel{
+        width: 95%;
+    }
+
+    li.nav-logo{
+        margin-top:0px;
+    }
+
+    button.navbar-toggle{
+        margin-top:15px;
+    }
+
+    .show-image{
+        width:95%;
+    }
+
 
 }
 
