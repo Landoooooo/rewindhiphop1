@@ -67,6 +67,7 @@ gem 'figaro'
 gem 'meta-tags'
 # Bootstrap 
 gem 'bootstrap-sass', '~> 3.3'
+gem 'mini_magick'
 # Social Media Share Icons
 gem 'shareable'
 # Font Awesome
