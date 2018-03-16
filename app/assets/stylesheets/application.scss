@@ -13,6 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
 
 
@@ -568,9 +571,3 @@ div.panel-body:hover{
 
 
 }
-
-
-
-
-@import "bootstrap-sprockets";
-@import "bootstrap";
