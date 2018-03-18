@@ -57,7 +57,7 @@ class PostsController < ApplicationController
         site: "@rewindhiphop",
         title: @post.title,
         description: @post.caption,
-        image: @post.image.url(:medium),
+        image:src: @post.image.url(:medium),
       },
       og: {
         title: @post.title,
