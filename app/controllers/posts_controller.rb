@@ -48,26 +48,7 @@ class PostsController < ApplicationController
 
   # The show action renders the individual post after retrieving the the id
   def show
-    set_meta_tags title: @post.title,
-      site: "Rewindhiphop.com",
-      reverse: true,
-      description: @post.caption,
-      twitter: {
-        card: "summary",
-        site: "@rewindhiphop",
-        title: @post.title,
-        description: @post.caption,
-        image:src: @post.image.url(:medium),
-      },
-      og: {
-        title: @post.title,
-        description: @post.caption,
-        type: 'website',
-        url: post_path(@post), 
-        image: @post.image.url(:medium)
-      }
-
-
+    
     @user = current_user
     @post = Post.friendly.find(params[:id])
     @comments = @post.comments
