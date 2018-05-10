@@ -12,7 +12,7 @@
                    <%= image_tag(post.image.url(:medium), :class => "carousel_image image_responsive", :style => "max-height:350px;") %>
                   <% end %>
                   <div class="carousel-caption image_caption">
-                    <h3 class="post-title"><strong><%= link_to post.title, post_path(post)%></strong></h3>
+                    <h3 class="post-title"><strong><%= link_to post.title.truncate_words(10), post_path(post)%></strong></h3>
                   </div>
                 </div>
               <% end %>
